@@ -1,0 +1,154 @@
+:root {
+  --primary-color: #4E279C;
+  --secondary-color: #263F7A;
+  --dark-color: #002147;
+  --light-color: #fafafa;
+  --highlight-color: #f8f86c;
+  --text-color: #d0daf5;
+}
+
+html {
+  font-family: "Recursive", sans-serif;
+  background-color: var(--dark-color);
+  font-size: 16px;
+}
+
+nav {
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+nav a {
+  color: var(--light-color);
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
+main {
+  background-color: var(--dark-color);
+  color: var(--text-color);
+  padding: 1rem;
+  margin-top: 2rem; /* make room for the fixed navbar */
+  margin-bottom: 2rem; /* make room for the fixed footer */
+}
+
+main h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+main p {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+header {
+  width: 100%;
+}
+
+.entry {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+  border: 5px solid var(--light-color);
+  border-radius: 20px;
+  padding: 20px;
+  margin: 0 20px 50px 20px;
+}
+
+.entry img {
+  max-width: 100%;
+  margin-bottom: 1rem;
+}
+
+.entry h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.entry p {
+  text-align: center;
+}
+
+.entry a {
+  background-color: var(--highlight-color);
+  color: var(--dark-color);
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+footer {
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer a {
+  color: var(--text-color);
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  nav {
+    flex-direction: row;
+  }
+
+  nav a {
+    margin: 0 2rem;
+  }
+
+  main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .entry {
+    width: 35%;
+    margin-bottom: 3rem;
+  }
+
+  .entry img {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  main h1 {
+    font-size: 4rem;
+  }
+
+  main p {
+    font-size: 2rem;
+  }
+
+  .entry {
+    width: 25%;
+  }
+
+  .entry h2 {
+    font-size: 2rem;
+  }
+
+  .entry p {
+    font-size: 1.25rem;
+  }
+}
