@@ -121,16 +121,23 @@ footer {
   background-color: var(--secondary-color);
   font-size: var(--fs-300);
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 10px;
-  position: fixed;
-  bottom: 0;
+  padding: 5px;
+  /* position: fixed; */
+  /* bottom: 0; */
+  width: 100%;
+}
+
+.footer-note {
+  color: var(--text-color);
+  text-align: center;
   width: 100%;
 }
 
 footer a {
-  color: var(--text-color);
+  color: var(--light-color);
   text-decoration: none;
   margin: 0 10px;
 }
@@ -153,7 +160,6 @@ footer a {
   }
 
   .entry img {
-    border: 4px solid var(--light-color);
     width: 100%;
   }
 }
