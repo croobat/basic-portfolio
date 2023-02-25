@@ -16,19 +16,19 @@
 
 @media only screen and (min-width: 768px) {
   :root {
-    --fs-xl: 3.6rem;
-    --fs-lg: 2.2rem;
-    --fs-md: 1.7rem;
-    --fs-sm: 1.4rem;
+    --fs-xl: 3.8rem;
+    --fs-lg: 2.4rem;
+    --fs-md: 2rem;
+    --fs-sm: 1.6rem;
   }
 }
 
 @media only screen and (min-width: 1366px) {
   :root {
-    --fs-xl: 4.6rem;
-    --fs-lg: 2.8rem;
-    --fs-md: 2.0rem;
-    --fs-sm: 1.6rem;
+    --fs-xl: 4.8rem;
+    --fs-lg: 3rem;
+    --fs-md: 2.2rem;
+    --fs-sm: 1.8rem;
   }
 }
 
@@ -166,6 +166,7 @@ footer a {
   display: flex;
   flex-direction: column-reverse;
   text-align: center;
+  padding: 0 20px;
 }
 
 .hero p {
@@ -218,10 +219,6 @@ footer a {
 
   .hero img {
     max-width: 300px;
-  }
-
-  .hero div:first-child {
-    padding-right: 20px;
   }
 }
 
