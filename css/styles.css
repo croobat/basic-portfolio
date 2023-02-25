@@ -32,6 +32,7 @@
   }
 }
 
+
 html, body {
   height: 100%;
   line-height: 1.4;
@@ -49,6 +50,11 @@ body {
   flex-direction: column;
 }
 
+header {
+  margin-top: 20px;
+  width: 100%;
+}
+
 nav {
   background-color: var(--primary-color);
   font-size: var(--fs-sm);
@@ -61,7 +67,6 @@ nav {
   width: 100%;
   z-index: 1;
 }
-
 nav a {
   color: var(--light-color);
   text-decoration: none;
@@ -75,30 +80,21 @@ main {
   margin-top: 25px; /* make room for the fixed navbar */
   /* margin-bottom: 20px; /* make room for the fixed footer */
 }
-
 main h1 {
   text-align: center;
   font-size: var(--fs-xl);
 }
-
 main h2 {
   text-align: center;
   font-size: var(--fs-lg);
 }
-
 main p {
   font-size: var(--fs-md);
   margin-bottom: 20px;
   max-width: 80ch;
 }
-
 main a {
   color: var(--highlight-color);
-}
-
-header {
-  margin-top: 20px;
-  width: 100%;
 }
 
 .entry {
@@ -111,22 +107,18 @@ header {
   padding: 20px;
   margin: 0 20px 50px 20px;
 }
-
 .entry img {
   max-width: 100%;
   margin-bottom: 10px;
 }
-
 .entry h2 {
   font-size: var(--fs-lg);
   margin-bottom: 10px;
 }
-
 .entry p {
   font-size: var(--fs-md);
   text-align: center;
 }
-
 .entry a {
   background-color: var(--highlight-color);
   color: var(--dark-color);
@@ -143,19 +135,15 @@ footer {
   justify-content: center;
   align-items: center;
   padding: 20px 0;
-  /* position: fixed; */
-  /* bottom: 0; */
   width: 100%;
   margin-top: auto;
 }
-
 .footer-note {
   color: var(--text-color);
   text-align: center;
   width: 100%;
   margin-bottom: 0;
 }
-
 footer a {
   color: var(--light-color);
   text-decoration: none;
@@ -168,11 +156,9 @@ footer a {
   text-align: center;
   padding: 0 20px;
 }
-
 .hero p {
   text-align: left;
 }
-
 .hero img {
   max-width: 50%;
   vertical-align: middle;
@@ -180,15 +166,14 @@ footer a {
   border-radius: 50%;
   width: 100%;
 }
-
 .hero div:first-child {
   flex-basis: 65%;
   padding: 0 1rem;
 }
-
 .hero div:last-child {
   flex-basis: 35%;
 }
+
 
 @media only screen and (min-width: 768px) {
   nav a {
@@ -206,7 +191,6 @@ footer a {
     width: 40%;
     margin: 0 10px 50px 10px;
   }
-
   .entry img {
     width: 100%;
   }
@@ -215,11 +199,11 @@ footer a {
     flex-direction: row;
     align-items: center;
   }
-
   .hero img {
     max-width: 300px;
   }
 }
+
 
 @media only screen and (min-width: 1366px) {
   .entry {
