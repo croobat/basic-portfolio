@@ -3,15 +3,16 @@
 
   --primary-color: #4E279C;
   --secondary-color: #263F7A;
+  --tertiary-color: #f8a676;
   --dark-color: #002147;
   --light-color: #eeeeee;
-  --highlight-color: #f8f86c;
+  --highlight-color: #f5f59b;
   --text-color: #d0daf5;
 
   --fs-xl: 2.8rem;
   --fs-lg: 2.0rem;
   --fs-md: 1.6rem;
-  --fs-sm: 1.2rem;
+  --fs-sm: 1.4rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -51,34 +52,78 @@ body {
 }
 
 header {
-  margin-top: 20px;
   width: 100%;
 }
 
 nav {
   background-color: var(--primary-color);
-  font-size: var(--fs-sm);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  padding: 10px;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1;
+  overflow: hidden;
 }
 nav a {
+  font-size: var(--fs-sm);
   color: var(--light-color);
+  display: block;
+  padding: 10px 30px;
   text-decoration: none;
-  margin: 0 10px;
+  text-align: center;
+  float: left;
+  transition: 0.2s;
+}
+nav a:hover {
+  background-color: var(--highlight-color);
+  color: black;
+}
+nav a.active {
+  background-color: var(--tertiary-color);
+  color: var(--dark-color);
+}
+/* Responsive navbar */
+@media only screen and (max-width: 768px) {
+  nav a:not(:first-child) {
+    display: none;
+  }
+  nav a:first-child:not(.active) {
+    background-color: var(--highlight-color);
+    color: var(--dark-color);
+  }
+  nav a.hamburger {
+    float: right;
+    display: block;
+  }
+
+  nav.responsive {
+    position: absolute;
+    display: block;
+  }
+
+  nav.responsive :not(:first-child):not(:last-child) {
+    padding: 25px 30px;
+    transition: 0.2s;
+  }
+  nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  nav.responsive a.hamburger {
+    color: var(--dark-color);
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
 }
 
 main {
   background-color: var(--dark-color);
   color: var(--text-color);
-  padding: 10px;
-  margin-top: 25px; /* make room for the fixed navbar */
-  /* margin-bottom: 20px; /* make room for the fixed footer */
+  padding: 40px 20px;
 }
 main h1 {
   text-align: center;
@@ -91,7 +136,7 @@ main h2 {
 main p {
   font-size: var(--fs-md);
   margin-bottom: 20px;
-  max-width: 80ch;
+  max-width: 60ch;
 }
 main a {
   color: var(--highlight-color);
@@ -154,7 +199,6 @@ footer a {
   display: flex;
   flex-direction: column-reverse;
   text-align: center;
-  padding: 0 20px;
 }
 .hero p {
   text-align: left;
@@ -176,15 +220,19 @@ footer a {
 
 
 @media only screen and (min-width: 768px) {
-  nav a {
-    margin: 0 20px;
-  }
-
   main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+  }
+
+  nav {
+    justify-content: center;
+  }
+
+  nav .hamburger {
+    display: none;
   }
 
   .entry {
@@ -206,6 +254,9 @@ footer a {
 
 
 @media only screen and (min-width: 1366px) {
+  main {
+    padding: 50px;
+  }
   .entry {
     border: 4px solid var(--light-color);
     width: 28%;
