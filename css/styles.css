@@ -6,7 +6,9 @@
   --tertiary-color: #A2D9C4;
   --dark-color: #0C1C3E;
   --light-color: #EEEEEE;
-  --highlight-color: #F5F59B;
+  --yellow-color: #F5F59B;
+  --pink-color: #FFA3D7;
+  --blue-color: #8BE9FD;
   --text-color: #D0DAF5;
 
   --fs-xl: 2.8rem;
@@ -77,7 +79,7 @@ nav a {
   transition: 0.2s;
 }
 nav a:hover {
-  background-color: var(--highlight-color);
+  background-color: var(--yellow-color);
   color: black;
 }
 nav a.active {
@@ -85,12 +87,22 @@ nav a.active {
   color: var(--dark-color);
 }
 
+strong {
+  font-weight: bold;
+  color: var(--pink-color);
+}
+
+em {
+  font-style: italic;
+  color: var(--blue-color);
+}
+
 @media only screen and (max-width: 768px) {
   nav a:not(:first-child) {
     display: none;
   }
   nav a:first-child:not(.active) {
-    background-color: var(--highlight-color);
+    background-color: var(--yellow-color);
     color: var(--dark-color);
   }
   nav a.hamburger {
@@ -144,7 +156,7 @@ main p {
   max-width: 60ch;
 }
 main a {
-  color: var(--highlight-color);
+  color: var(--yellow-color);
 }
 
 .entry {
@@ -170,7 +182,7 @@ main a {
   text-align: center;
 }
 .entry a {
-  background-color: var(--highlight-color);
+  background-color: var(--yellow-color);
   color: var(--dark-color);
   padding: 5px 10px;
   text-decoration: none;
