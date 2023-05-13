@@ -1,13 +1,13 @@
 :root {
   font-size: 62.5%;
 
-  --primary-color: #4E279C;
-  --secondary-color: #263F7A;
-  --tertiary-color: #f8a676;
-  --dark-color: #002147;
-  --light-color: #eeeeee;
-  --highlight-color: #f5f59b;
-  --text-color: #d0daf5;
+  --primary-color: #5B33B0;
+  --secondary-color: #1E2D59;
+  --tertiary-color: #A2D9C4;
+  --dark-color: #0C1C3E;
+  --light-color: #EEEEEE;
+  --highlight-color: #F5F59B;
+  --text-color: #D0DAF5;
 
   --fs-xl: 2.8rem;
   --fs-lg: 2.0rem;
