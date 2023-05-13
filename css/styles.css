@@ -6,9 +6,10 @@
   --tertiary-color: #A2D9C4;
   --dark-color: #0C1C3E;
   --light-color: #EEEEEE;
-  --yellow-color: #F5F59B;
+  --yellow-color: #F9F7AF;
   --pink-color: #FFA3D7;
   --blue-color: #8BE9FD;
+  --orange-color: #FFB48E;
   --text-color: #D0DAF5;
 
   --fs-xl: 2.8rem;
@@ -97,6 +98,10 @@ em {
   color: var(--blue-color);
 }
 
+.link-list {
+  max-width: 70ch;
+}
+
 @media only screen and (max-width: 768px) {
   nav a:not(:first-child) {
     display: none;
@@ -150,10 +155,14 @@ main h2 {
   text-align: center;
   font-size: var(--fs-lg);
 }
+main h3 {
+  color: var(--orange-color);
+  font-size: var(--fs-lg);
+}
 main p {
   font-size: var(--fs-md);
   margin-bottom: 20px;
-  max-width: 60ch;
+  max-width: 70ch;
 }
 main a {
   color: var(--yellow-color);
