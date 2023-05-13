@@ -84,8 +84,11 @@ nav a.active {
   background-color: var(--tertiary-color);
   color: var(--dark-color);
 }
-/* Responsive navbar */
-/* TODO: animate navbar */
+
+.p-cointaner {
+  align-items: center;
+}
+
 @media only screen and (max-width: 768px) {
   nav a:not(:first-child) {
     display: none;
