@@ -81,7 +81,7 @@ nav a {
   transition: 0.2s;
 }
 nav a:hover {
-  background-color: var(--yellow-color);
+  background-color: var(--tertiary-color);
   color: black;
 }
 nav a.active {
