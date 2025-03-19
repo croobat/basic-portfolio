@@ -323,15 +323,17 @@ footer a {
   border-radius: 15px;
   font-size: var(--fs-sm);
   transition: 0.2s;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   gap: 6px;
+  white-space: nowrap;
 }
 
 .tag img {
   width: 20px;
   height: 20px;
   object-fit: contain;
+  flex-shrink: 0;
 }
 
 .tag:hover {
