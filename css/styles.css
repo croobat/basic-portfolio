@@ -198,6 +198,19 @@ main a {
   margin-top: 10px;
 }
 
+.entry h2 a {
+  color: var(--dark-color);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  padding: 4px 8px;
+  border-radius: 8px;
+}
+
+.entry h2 a:hover {
+  background-color: var(--pink-color);
+  color: var(--dark-color);
+}
+
 footer {
   background-color: var(--secondary-color);
   font-size: var(--fs-sm);
