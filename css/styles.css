@@ -181,7 +181,6 @@ main a {
 }
 .entry img {
   max-width: 100%;
-  margin-bottom: 10px;
 }
 .entry h2 {
   font-size: var(--fs-lg);
@@ -294,4 +293,35 @@ footer a {
   .hero img {
     max-width: 400px;
   }
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.tag {
+  background-color: var(--secondary-color);
+  color: var(--light-color);
+  padding: 8px 12px;
+  border-radius: 15px;
+  font-size: var(--fs-sm);
+  transition: 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.tag img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.tag:hover {
+  background-color: var(--primary-color);
+  transform: translateY(-2px);
 }
